@@ -29,3 +29,13 @@ You can use ksqlDB with CLI using:
 ```bash
 $ docker exec -i ksqldb-cli ksql -u ksqlDBUser -p ksqlDBUser http://ksqldb-server:8088
 ```
+
+## Create more RBAC bindings
+```
+./rbac-limit.sh 1000
+```
+
+Count the total number of bindings with MDS APIs
+```
+./rbac-counter.sh
+```
